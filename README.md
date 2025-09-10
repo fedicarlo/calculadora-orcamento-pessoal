@@ -1,45 +1,36 @@
-# 💰 Calculadora de Orçamento Pessoal
+# Calculadora de Orçamento Pessoal
 
-Aplicação web simples para registrar despesas e visualizar um **resumo mensal** (total e por categoria). Projeto desenvolvido para praticar fundamentos de front-end.
+Este projeto tem como objetivo desenvolver uma **calculadora de orçamento pessoal** que permita o controle de entradas e saídas financeiras, auxiliando o usuário a manter um equilíbrio entre receitas e despesas.
 
-## 🎯 Objetivo
-Permitir que o usuário cadastre despesas (descrição, categoria, valor, data), veja a lista do mês atual e um resumo — com dados salvos localmente via `localStorage`.
+## Objetivos do Projeto
+- Permitir o registro de receitas (salários, vendas, rendimentos, etc.).
+- Permitir o registro de despesas (contas, compras, lazer, etc.).
+- Calcular o saldo disponível de forma automática.
+- Apresentar relatórios simples de gastos.
 
-## 🛠 Tecnologias
-- HTML5
-- CSS3
-- JavaScript (ES6+)
+## Tecnologias Utilizadas
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-## 📦 Estrutura
-```
-calculadora-orcamento-pessoal/
-├─ index.html
-├─ styles.css
-└─ app.js
-```
+## O que Aprendi
+- **Gerenciamento de Estado:** uso de `localStorage` para armazenar e atualizar dados.
+- **Separação de responsabilidades:** organização das funções para cadastro, listagem e cálculo do resumo.
+- **Comunicação de dados:** atualização dinâmica da interface a partir do estado.
+- **Renderização condicional:** exibição de mensagens para listas vazias e cálculos automáticos.
 
-## ▶️ Como executar
-Basta abrir o arquivo `index.html` no navegador (duplo clique). Não há dependências externas.
+## Status do Projeto
+Em desenvolvimento — versão mínima funcional entregue.
 
-## 📚 O que aprendi
-- **Gerenciamento de Estado:** estruturação do estado no `localStorage`.
-- **Componentização (conceitual):** separação de responsabilidades (formulário, lista, resumo).
-- **Comunicação de dados:** atualização dinâmica da UI a partir do estado.
-- **Renderização condicional:** exibição de estados vazios e totais calculados.
+## Como Executar
+1. Baixe ou clone este repositório.
+2. Abra o arquivo `index.html` no navegador (duplo clique).
+3. Não há dependências externas.
 
-## ✅ Critérios de aceitação
-- [x] Adicionar, listar e excluir despesas do mês atual
-- [x] Resumo do mês (total)
-- [x] Resumo por categoria
-- [x] Persistência em `localStorage`
+## Capturas de Tela
+*(Adicione aqui prints da aplicação rodando)*
 
-## 🌐 Deploy (opcional, recomendado)
-1. Crie um repositório no GitHub e envie estes 3 arquivos.
-2. Vá em **Settings → Pages → Branch: `main` / root** e **Save**.
-3. O GitHub Pages publicará seu site em alguns minutos.
-
-## 🖼 Capturas de tela
-Inclua aqui prints da aplicação rodando.
-
-## 📄 Licença
-MIT
+## Autor
+Felipe di Carlo  
+Estudante de Análise e Desenvolvimento de Sistemas  
+Universidade Cruzeiro do Sul Virtual
