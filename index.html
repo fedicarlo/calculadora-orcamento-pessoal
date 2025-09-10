@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora de Orçamento Pessoal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora de Orçamento Pessoal</h1>
+
+    <section class="form-section">
+      <h2>Registrar Despesa</h2>
+      <form id="expense-form">
+        <div class="grid">
+          <label>
+            Descrição
+            <input type="text" id="desc" placeholder="Ex.: Mercado" required>
+          </label>
+          <label>
+            Categoria
+            <select id="category" required>
+              <option value="Alimentação">Alimentação</option>
+              <option value="Transporte">Transporte</option>
+              <option value="Moradia">Moradia</option>
+              <option value="Lazer">Lazer</option>
+              <option value="Saúde">Saúde</option>
+              <option value="Educação">Educação</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </label>
+          <label>
+            Valor (R$)
+            <input type="number" id="amount" step="0.01" min="0" required>
+          </label>
+          <label>
+            Data
+            <input type="date" id="date" required>
+          </label>
+        </div>
+        <button type="submit" class="btn">Adicionar</button>
+      </form>
+    </section>
+
+    <section class="summary-section">
+      <h2>Resumo do Mês <span id="month-label"></span></h2>
+      <div class="summary-boxes" id="summary-boxes">
+        <div class="box"><strong>Total do Mês</strong><span id="total-month">R$ 0,00</span></div>
+      </div>
+      <details>
+        <summary><strong>Ver resumo por categoria</strong></summary>
+        <ul id="category-summary"></ul>
+      </details>
+    </section>
+
+    <section class="list-section">
+      <h2>Despesas do Mês</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Data</th>
+            <th>Descrição</th>
+            <th>Categoria</th>
+            <th>Valor (R$)</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="expense-list"></tbody>
+      </table>
+      <p id="empty-state" class="muted" style="display:none;">Nenhuma despesa registrada neste mês.</p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
