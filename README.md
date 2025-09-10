@@ -27,11 +27,6 @@ Este projeto tem como objetivo desenvolver uma **calculadora de orçamento pesso
 
 ---
 
-## Status do Projeto
-Em desenvolvimento — versão mínima funcional entregue.
-
----
-
 ## Como Executar
 1. Baixe ou clone este repositório:
    ```bash
