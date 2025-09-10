@@ -32,6 +32,9 @@ Este projeto tem como objetivo desenvolver uma **calculadora de orçamento pesso
    ```bash
    git clone https://github.com/fedicarlo/calculadora-orcamento-pessoal.git
 
+## Deploy
+Acesse a versão online: https://fedicarlo.github.io/calculadora-orcamento-pessoal/
+
 ## Autor
 Felipe di Carlo
 Estudante de Análise e Desenvolvimento de Sistemas
